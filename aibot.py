@@ -58,7 +58,6 @@ def ai_ask(prompt, data=None, temperature=0.5, max_tokens=250, model="mistral-sm
     except Exception as e:
         return f"Error: {str(e)}"
 
-
 st.title("Simple chat")
 
 # Initialize chat history
@@ -84,3 +83,5 @@ with st.chat_message("assistant"):
 
 # Add assistant response to chat history
 st.session_state.messages.append({"role": "assistant", "content": response})
+
+
